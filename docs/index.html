@@ -7,6 +7,28 @@
 		<title>Eksamen</title>
 	</head>
 	<body>
-		<script src="js/app.js"></script>
+		<h2>wooop</h2>
+
+		<div class="all-lists">
+			<h2>My lists</h2>
+			<ul class="task-list" data-lists></ul>
+
+			<form action="" data-new-list-form>
+				<input
+					type="text"
+					class="new list"
+					placehoder="new list name"
+					aria-label="new list name"
+					data-new-list-input
+				/>
+				<button class="btn create" aria-label="create new list">
+					+
+				</button>
+			</form>
+		</div>
+
+		<div class="todo-list"></div>
+
+		<script defer src="js/app.js"></script>
 	</body>
 </html>
