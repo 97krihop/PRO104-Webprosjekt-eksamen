@@ -1,9 +1,6 @@
 const listsDiv = document.querySelector('[data-lists]');
 const newListForm = document.querySelector('[data-new-list-form]');
 const newListInput = document.querySelector('[data-new-list-input]');
-const listDisplayDiv = document.querySelector('[data-list-display-div]');
-const listTitleElement = document.querySelector('[data-list-title]');
-const listCountElement = document.querySelector('[data-list-count]');
 
 listsDiv.addEventListener('click', (e) => {
 	if (e.target.tagName.toLowerCase() === 'li') {
@@ -29,7 +26,7 @@ function createList(name) {
 	return {
 		id: Date.now().toString(),
 		name: name,
-		tasks: [],
+		team: [],
 	};
 }
 

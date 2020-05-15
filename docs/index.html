@@ -27,59 +27,42 @@
 			</form>
 		</div>
 
-		<div class="todo-list" data-list-display-div>
-			<div class="todo-header">
-				<h2 class="list-title" data-list-title>---</h2>
-				<p class="task-count" data-list-count></p>
-			</div>
-
-			<div class="todo-body">
-				<div class="tasks" data-tasks-div></div>
-
-				<!--  -->
-
-				<div class="new-task-creator">
-					<form action="/" method="post" data-new-task-form>
-						<input
-							type="text"
-							class="new task"
-							placeholder="new task name"
-							aria-label="new task name"
-							data-new-task-input
-						/>
-						<button class="btn create" aria-label="create new task">
-							+
-						</button>
-					</form>
-				</div>
-
-				<div class="delete-things">
-					<button class="btn delete" data-clear-complete-tasks-btn>
-						Clear completed tasks
-					</button>
-					<button class="btn delete" data-delete-list-btn>
-						Delete list
-					</button>
-				</div>
-			</div>
+		<div class="delete-things">
+			<button class="btn delete" data-delete-list-btn>
+				Delete list
+			</button>
 		</div>
-		<template id="task-template">
-			<div class="task">
-				<input type="checkbox" />
-				<label>
-					<span class="custom-checkbox"></span>
-				</label>
-			</div>
-		</template>
+
+		<br />
+
+		<div class="team-members">
+			<h2>Team mebers</h2>
+			<ul class="task-list" data-teams></ul>
+
+			<form action="" data-new-team-form>
+				<input
+					type="text"
+					class="new list"
+					placehoder="new list name"
+					aria-label="new list name"
+					data-new-team-input
+				/>
+				<button class="btn create" aria-label="create new list">
+					+
+				</button>
+			</form>
+			<button class="btn merge" data-merge-btn>
+				Merge
+			</button>
+		</div>
 
 		<br />
 
 		<button dark-mode-toggle>dark</button>
 
 		<script defer src="js/darkmode.js"></script>
-		<script defer src="js/task.js"></script>
 		<script defer src="js/list.js"></script>
-		<script defer src="js/clrCompTaskBtn.js"></script>
+		<script src="js/teamMembers.js"></script>
 		<script defer src="js/delListBtn.js"></script>
 		<script defer src="js/app.js"></script>
 	</body>
