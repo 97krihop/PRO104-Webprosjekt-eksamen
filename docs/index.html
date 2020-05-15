@@ -3,11 +3,19 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Assistant&display=swap"
+			rel="stylesheet"
+		/>
 		<link rel="stylesheet" href="css/style.css" />
 		<title>Eksamen</title>
 	</head>
 	<body>
-		<h2>wooop</h2>
+		<h2 class="title">wooop</h2>
 
 		<div class="all-lists">
 			<h2>My lists</h2>
@@ -25,15 +33,13 @@
 					+
 				</button>
 			</form>
-		</div>
 
-		<div class="delete-things">
 			<button class="btn delete" data-delete-list-btn>
 				Delete list
 			</button>
 		</div>
 
-		<br />
+		<div class="active"></div>
 
 		<div class="team-members">
 			<h2>Team mebers</h2>
@@ -54,16 +60,18 @@
 			<button class="btn merge" data-merge-btn>
 				Merge
 			</button>
+			<button class="btn delete" data-delete-team-btn>
+				Delete team-member
+			</button>
 		</div>
 
-		<br />
-
-		<button dark-mode-toggle>dark</button>
+		<button class="darkmode-btn btn" dark-mode-toggle>dark</button>
 
 		<script defer src="js/darkmode.js"></script>
 		<script defer src="js/list.js"></script>
-		<script src="js/teamMembers.js"></script>
+		<script defer src="js/teamMembers.js"></script>
 		<script defer src="js/delListBtn.js"></script>
+		<script defer src="js/delTeamBtn.js"></script>
 		<script defer src="js/app.js"></script>
 	</body>
 </html>

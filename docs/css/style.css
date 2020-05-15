@@ -9,21 +9,63 @@
 	--ff-body: 'Assistant', sans-serif;
 }
 
+*,
+*::before,
+*::after {
+	font-family: inherit;
+	box-sizing: border-box;
+}
+
 .darkmode {
 	--foreground: var(--clr-light);
 	--background: var(--clr-dark);
 }
 
 body {
-	color: var(--foreground);
-	background: var(--background);
 	transition: background 500ms ease-in-out, color 1000ms ease-in-out;
 	-webkit-transition: background 500ms ease-in-out, color 1000ms ease-in-out;
 	-moz-transition: background 500ms ease-in-out, color 1000ms ease-in-out;
 	-ms-transition: background 500ms ease-in-out, color 1000ms ease-in-out;
 	-o-transition: background 500ms ease-in-out, color 1000ms ease-in-out;
+	margin: 0;
+
+	color: var(--foreground);
+	background: var(--background);
+	font-family: var(--ff-body);
+	font-weight: 300;
+	font-size: 1.5rem;
+	align-items: center;
+	display: grid;
+	grid:
+		'header header header header header' auto
+		'...... lists  active teams  ......' auto
+		'footer footer footer footer footer' /
+		1fr minmax(100px, 300px) minmax(100px, 300px) minmax(100px, 300px) 1fr;
 }
 
+.title {
+	grid-area: header;
+	font-family: var(--ff-title);
+	text-align: center;
+	font-size: calc(7vw + 2rem);
+	font-weight: 900;
+}
+
+.all-lists {
+	grid-area: lists;
+	line-height: 1.5;
+}
+.active {
+	grid-area: active;
+}
+.darkmode-btn {
+	grid-area: active;
+}
+
+.team-members {
+	grid-area: teams;
+	line-height: 1.5;
+}
 .active-list {
-	font-style: italic;
+	font-size-adjust: 1.2;
 }
