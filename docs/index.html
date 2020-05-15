@@ -39,7 +39,7 @@
 				<!--  -->
 
 				<div class="new-task-creator">
-					<form action="" data-new-task-form>
+					<form action="/" method="post" data-new-task-form>
 						<input
 							type="text"
 							class="new task"
@@ -63,9 +63,6 @@
 				</div>
 			</div>
 		</div>
-
-		<script defer src="js/app.js"></script>
-
 		<template id="task-template">
 			<div class="task">
 				<input type="checkbox" />
@@ -74,5 +71,16 @@
 				</label>
 			</div>
 		</template>
+
+		<br />
+
+		<button dark-mode-toggle>dark</button>
+
+		<script defer src="js/darkmode.js"></script>
+		<script defer src="js/task.js"></script>
+		<script defer src="js/list.js"></script>
+		<script defer src="js/clrCompTaskBtn.js"></script>
+		<script defer src="js/delListBtn.js"></script>
+		<script defer src="js/app.js"></script>
 	</body>
 </html>

@@ -1,0 +1,25 @@
+:root {
+	--clr-light: #fefefe;
+	--clr-dark: #2f2f2f;
+
+	--foreground: var(--clr-dark);
+	--background: var(--clr-light);
+
+	--ff-title: 'Playfair Display', serif;
+	--ff-body: 'Assistant', sans-serif;
+}
+
+.darkmode {
+	--foreground: var(--clr-light);
+	--background: var(--clr-dark);
+}
+
+body {
+	color: var(--foreground);
+	background: var(--background);
+	transition: background 500ms ease-in-out, color 1000ms ease-in-out;
+	-webkit-transition: background 500ms ease-in-out, color 1000ms ease-in-out;
+	-moz-transition: background 500ms ease-in-out, color 1000ms ease-in-out;
+	-ms-transition: background 500ms ease-in-out, color 1000ms ease-in-out;
+	-o-transition: background 500ms ease-in-out, color 1000ms ease-in-out;
+}
