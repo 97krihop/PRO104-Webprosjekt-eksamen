@@ -1,6 +1,7 @@
 :root {
 	--clr-light: #fefefe;
 	--clr-dark: #2f2f2f;
+	--clr-active: #ffaaaa;
 
 	--foreground: var(--clr-dark);
 	--background: var(--clr-light);
@@ -28,7 +29,7 @@ body {
 	-ms-transition: background 500ms ease-in-out, color 1000ms ease-in-out;
 	-o-transition: background 500ms ease-in-out, color 1000ms ease-in-out;
 	margin: 0;
-
+	padding: 0;
 	color: var(--foreground);
 	background: var(--background);
 	font-family: var(--ff-body);
@@ -39,7 +40,7 @@ body {
 	grid:
 		'header header header header header' auto
 		'...... lists  active teams  ......' auto
-		'footer footer footer footer footer' /
+		'darkM  footer footer footer footer' auto/
 		1fr minmax(100px, 300px) minmax(100px, 300px) minmax(100px, 300px) 1fr;
 }
 
@@ -59,7 +60,8 @@ body {
 	grid-area: active;
 }
 .darkmode-btn {
-	grid-area: active;
+	grid-area: darkM;
+	width: 10%;
 }
 
 .team-members {
@@ -67,5 +69,6 @@ body {
 	line-height: 1.5;
 }
 .active-list {
-	font-size-adjust: 1.2;
+	color: var(--clr-active);
+	font-size: larger;
 }

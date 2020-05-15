@@ -22,6 +22,7 @@ function saveAndRender() {
 	save();
 	renderLists();
 	renderTeams();
+	rederActive();
 }
 function clearElement(element) {
 	while (element.firstChild) {

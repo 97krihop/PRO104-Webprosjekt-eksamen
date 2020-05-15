@@ -27,6 +27,7 @@ function createList(name) {
 		id: Date.now().toString(),
 		name: name,
 		team: [],
+		comments: ['1', '2'],
 	};
 }
 

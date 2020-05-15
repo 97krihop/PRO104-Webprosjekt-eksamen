@@ -17,6 +17,8 @@
 	<body>
 		<h2 class="title">wooop</h2>
 
+		<!-- list -->
+
 		<div class="all-lists">
 			<h2>My lists</h2>
 			<ul class="task-list" data-lists></ul>
@@ -39,7 +41,32 @@
 			</button>
 		</div>
 
-		<div class="active"></div>
+		<!-- active area-->
+
+		<div class="active" data-active-div>
+			<h2 data-active-h2>---</h2>
+
+			<ul class="active-team" data-active-team></ul>
+			<ul class="active-comment" data-active-comment></ul>
+
+			<form action="" data-new-active-form>
+				<input
+					type="text"
+					class="new comment"
+					placehoder="new comment"
+					aria-label="new comment"
+					data-new-active-input
+				/>
+				<button class="btn create" aria-label="create new comment">
+					+
+				</button>
+			</form>
+			<button class="btn complete" data-active-complete-btn>
+				Complete task
+			</button>
+		</div>
+
+		<!-- team -->
 
 		<div class="team-members">
 			<h2>Team mebers</h2>
@@ -48,12 +75,12 @@
 			<form action="" data-new-team-form>
 				<input
 					type="text"
-					class="new list"
-					placehoder="new list name"
-					aria-label="new list name"
+					class="new team-member"
+					placehoder="new team-member"
+					aria-label="new team-member"
 					data-new-team-input
 				/>
-				<button class="btn create" aria-label="create new list">
+				<button class="btn create" aria-label="create new team-member">
 					+
 				</button>
 			</form>
@@ -65,11 +92,14 @@
 			</button>
 		</div>
 
+		<!-- darkmode -->
 		<button class="darkmode-btn btn" dark-mode-toggle>dark</button>
 
+		<!-- script -->
 		<script defer src="js/darkmode.js"></script>
 		<script defer src="js/list.js"></script>
 		<script defer src="js/teamMembers.js"></script>
+		<script defer src="js/active.js"></script>
 		<script defer src="js/delListBtn.js"></script>
 		<script defer src="js/delTeamBtn.js"></script>
 		<script defer src="js/app.js"></script>
