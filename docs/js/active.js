@@ -16,6 +16,19 @@ function rederActive() {
 		rednerComments(selectedList);
 	}
 }
+
+activeForm.addEventListener('submit', (e) => {
+	e.preventDefault();
+	const comment = activeInput.value;
+	if (comment == null || comment === '') {
+		return;
+	}
+	activeInput.value = null;
+	const selectedList = lists.find((list) => list.id === selectedListId);
+	selectedList.comments.push(comment);
+	saveAndRender();
+});
+
 function rednerComments(selectedList) {
 	clearElement(activeComments);
 
