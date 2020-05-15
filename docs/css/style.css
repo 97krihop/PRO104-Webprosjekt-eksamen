@@ -38,9 +38,9 @@ body {
 	align-items: center;
 	display: grid;
 	grid:
-		'header header header header header' auto
+		'header header header header darkMd' auto
 		'...... lists  active teams  ......' auto
-		'darkM  footer footer footer footer' auto/
+		'footer footer footer footer footer' auto/
 		1fr minmax(100px, 300px) minmax(100px, 300px) minmax(100px, 300px) 1fr;
 }
 
@@ -48,7 +48,7 @@ body {
 	grid-area: header;
 	font-family: var(--ff-title);
 	text-align: center;
-	font-size: calc(7vw + 2rem);
+	font-size: calc(2vw + 2rem);
 	font-weight: 900;
 }
 
@@ -60,7 +60,7 @@ body {
 	grid-area: active;
 }
 .darkmode-btn {
-	grid-area: darkM;
+	grid-area: darkMd;
 	width: 10%;
 }
 
