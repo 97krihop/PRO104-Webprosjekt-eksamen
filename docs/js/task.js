@@ -2,9 +2,6 @@ const tasksDiv = document.querySelector('[data-tasks-div]');
 const taskTemplate = document.getElementById('task-template');
 const newTaskForm = document.querySelector('[data-new-task-form]');
 const newTaskInput = document.querySelector('[data-new-task-input]');
-const clearCompleteTasksBtn = document.querySelector(
-	'[data-clear-complete-tasks-btn]'
-);
 
 tasksDiv.addEventListener('click', (e) => {
 	if (e.target.tagName.toLowerCase() === 'input') {
@@ -29,18 +26,25 @@ newTaskForm.addEventListener('submit', (e) => {
 	saveAndRender();
 });
 
-clearCompleteTasksBtn.addEventListener('click', (e) => {
-	const selectedList = lists.find((list) => list.id === selectedListId);
-	selectedList.tasks = selectedList.tasks.filter((task) => !task.complete);
-	saveAndRender();
-});
-
 function createTask(name) {
 	return {
 		id: Date.now().toString(),
 		name: name,
 		complete: false,
 	};
+}
+
+function renderTaskBox() {
+	const selectedList = lists.find((list) => list.id == selectedListId);
+	if (selectedListId == null || selectedList == undefined) {
+		listDisplayDiv.style.display = 'none';
+	} else {
+		listDisplayDiv.style.display = '';
+		listTitleElement.innerText = selectedList.name;
+		renderTaskCount(selectedList);
+		clearElement(tasksDiv);
+		renderTasks(selectedList);
+	}
 }
 
 function renderTaskCount(selectedList) {
