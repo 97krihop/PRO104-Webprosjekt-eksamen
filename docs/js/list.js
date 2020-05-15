@@ -28,6 +28,7 @@ function createList(name) {
 		name: name,
 		team: [],
 		comments: [],
+		complete: false,
 	};
 }
 
