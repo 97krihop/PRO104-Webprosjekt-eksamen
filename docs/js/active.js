@@ -6,21 +6,21 @@ const activeComments = document.querySelector('[data-active-comment]');
 const activeForm = document.querySelector('[data-new-active-form]');
 const activeInput = document.querySelector('[data-new-active-input]');
 
-activeForm.addEventListener('submit', (e) => {
+activeForm.addEventListener('submit', e => {
 	e.preventDefault();
 	const comment = activeInput.value;
-	if (comment == null || comment === '') {
+	if (comment === null || comment === '') {
 		return;
 	}
 	activeInput.value = null;
-	const selectedList = lists.find((list) => list.id === selectedListId);
+	const selectedList = lists.find(list => list.id === selectedListId);
 	selectedList.comments.push(comment);
 	saveAndRender();
 });
 
 function rederActive() {
-	const selectedList = lists.find((list) => list.id === selectedListId);
-	if (selectedListId == null) {
+	const selectedList = lists.find(list => list.id === selectedListId);
+	if (selectedListId === null) {
 		activeDiv.style.display = 'none';
 	} else {
 		activeDiv.style.display = '';
@@ -48,8 +48,8 @@ function rednerTeams(selectedList) {
 		teamElement.classList.add('team-name');
 		const teamId = selectedList.team[i];
 
-		teams.forEach((team) => {
-			if (team.id == teamId) {
+		teams.forEach(team => {
+			if (team.id === teamId) {
 				teamElement.innerText = team.name;
 			}
 		});

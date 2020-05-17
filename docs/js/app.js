@@ -30,12 +30,12 @@ function clearElement(element) {
 	}
 }
 
-mergeBtn.addEventListener('click', (e) => {
+mergeBtn.addEventListener('click', e => {
 	addTeamToList();
 });
 
 function addTeamToList() {
-	lists.forEach((list) => {
+	lists.forEach(list => {
 		if (list.id !== selectedListId) {
 			return;
 		} else {
