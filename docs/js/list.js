@@ -1,18 +1,15 @@
 const listsDiv = document.querySelector('[data-lists]');
 const newListForm = document.querySelector('[data-new-list-form]');
 const newListInput = document.querySelector('[data-new-list-input]');
-const listDisplayDiv = document.querySelector('[data-list-display-div]');
-const listTitleElement = document.querySelector('[data-list-title]');
-const listCountElement = document.querySelector('[data-list-count]');
 
-listsDiv.addEventListener('click', (e) => {
+listsDiv.addEventListener('click', e => {
 	if (e.target.tagName.toLowerCase() === 'li') {
 		selectedListId = e.target.dataset.listId;
 		saveAndRender();
 	}
 });
 
-newListForm.addEventListener('submit', (e) => {
+newListForm.addEventListener('submit', e => {
 	e.preventDefault();
 	const listName = newListInput.value;
 	if (listName == null || listName === '') {
@@ -29,13 +26,15 @@ function createList(name) {
 	return {
 		id: Date.now().toString(),
 		name: name,
-		tasks: [],
+		team: [],
+		comments: [],
+		complete: false
 	};
 }
 
 function renderLists() {
 	clearElement(listsDiv);
-	lists.forEach((list) => {
+	lists.forEach(list => {
 		const listElement = document.createElement('li');
 		listElement.dataset.listId = list.id;
 		listElement.classList.add('list-name');

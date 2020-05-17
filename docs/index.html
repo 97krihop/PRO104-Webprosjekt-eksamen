@@ -3,11 +3,21 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Assistant&display=swap"
+			rel="stylesheet"
+		/>
 		<link rel="stylesheet" href="css/style.css" />
 		<title>Eksamen</title>
 	</head>
 	<body>
-		<h2>wooop</h2>
+		<h2 class="title">wooop</h2>
+
+		<!-- list -->
 
 		<div class="all-lists">
 			<h2>My lists</h2>
@@ -25,62 +35,77 @@
 					+
 				</button>
 			</form>
+
+			<button class="btn delete" data-delete-list-btn>
+				Delete list
+			</button>
 		</div>
 
-		<div class="todo-list" data-list-display-div>
-			<div class="todo-header">
-				<h2 class="list-title" data-list-title>---</h2>
-				<p class="task-count" data-list-count></p>
-			</div>
+		<!-- active area-->
 
-			<div class="todo-body">
-				<div class="tasks" data-tasks-div></div>
+		<div class="active" data-active-div>
+			<h2 data-active-h2>---</h2>
 
-				<!--  -->
+			<h4 class="txt">team:</h4>
+			<ul class="active-team" data-active-team></ul>
 
-				<div class="new-task-creator">
-					<form action="/" method="post" data-new-task-form>
-						<input
-							type="text"
-							class="new task"
-							placeholder="new task name"
-							aria-label="new task name"
-							data-new-task-input
-						/>
-						<button class="btn create" aria-label="create new task">
-							+
-						</button>
-					</form>
-				</div>
+			<h4 class="txt">comments:</h4>
+			<ul class="active-comment" data-active-comment></ul>
 
-				<div class="delete-things">
-					<button class="btn delete" data-clear-complete-tasks-btn>
-						Clear completed tasks
-					</button>
-					<button class="btn delete" data-delete-list-btn>
-						Delete list
-					</button>
-				</div>
-			</div>
+			<form action="" data-new-active-form>
+				<input
+					type="text"
+					class="new comment"
+					placehoder="new comment"
+					aria-label="new comment"
+					data-new-active-input
+				/>
+				<button class="btn create" aria-label="create new comment">
+					+
+				</button>
+			</form>
+			<button class="btn complete" data-active-complete-btn>
+				Complete task
+			</button>
 		</div>
-		<template id="task-template">
-			<div class="task">
-				<input type="checkbox" />
-				<label>
-					<span class="custom-checkbox"></span>
-				</label>
-			</div>
-		</template>
 
-		<br />
+		<!-- team -->
 
-		<button dark-mode-toggle>dark</button>
+		<div class="team-members">
+			<h2>Team mebers</h2>
+			<ul class="task-list" data-teams></ul>
 
+			<form action="" data-new-team-form>
+				<input
+					type="text"
+					class="new team-member"
+					placehoder="new team-member"
+					aria-label="new team-member"
+					data-new-team-input
+				/>
+				<button class="btn create" aria-label="create new team-member">
+					+
+				</button>
+			</form>
+			<button class="btn merge" data-merge-btn>
+				Merge
+			</button>
+			<button class="btn delete" data-delete-team-btn>
+				Delete team-member
+			</button>
+		</div>
+
+		<!-- darkmode -->
+		<button class="darkmode-btn btn" dark-mode-toggle>dark</button>
+
+		<!-- script -->
 		<script defer src="js/darkmode.js"></script>
-		<script defer src="js/task.js"></script>
 		<script defer src="js/list.js"></script>
-		<script defer src="js/clrCompTaskBtn.js"></script>
+		<script defer src="js/teamMembers.js"></script>
+		<script defer src="js/active.js"></script>
 		<script defer src="js/delListBtn.js"></script>
+		<script defer src="js/delTeamBtn.js"></script>
+		<script defer src="js/completeBtn.js"></script>
 		<script defer src="js/app.js"></script>
 	</body>
 </html>
