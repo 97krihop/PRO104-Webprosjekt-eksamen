@@ -10,6 +10,11 @@ const LOCAL_STORAGE_SELECTED_TEAM_ID_KEY = 'task.selectedTeamId';
 let teams = JSON.parse(localStorage.getItem(LOCAL_STORAGE_TEAM_KEY)) || [];
 let selectedTeamId = localStorage.getItem(LOCAL_STORAGE_SELECTED_TEAM_ID_KEY);
 
+const LOCAL_STORAGE_TEAM_KEY = 'task.teams';
+const LOCAL_STORAGE_SELECTED_TEAM_ID_KEY = 'task.selectedTeamId';
+let teams = JSON.parse(localStorage.getItem(LOCAL_STORAGE_TEAM_KEY)) || [];
+let selectedTeamId = localStorage.getItem(LOCAL_STORAGE_SELECTED_TEAM_ID_KEY);
+
 function save() {
 	localStorage.setItem(LOCAL_STORAGE_TASK_KEY, JSON.stringify(tasks));
 	localStorage.setItem(LOCAL_STORAGE_SELECTED_TASK_ID_KEY, selectedTaskId);
