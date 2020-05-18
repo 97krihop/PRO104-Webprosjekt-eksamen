@@ -34,7 +34,7 @@ body {
 	--background: var(--clr-dark);
 }
 
-.active-list {
+.active-task {
 	color: var(--clr-active);
 	font-size: larger;
 }
@@ -47,7 +47,7 @@ body {
 		display: grid;
 		grid:
 			'header header header header darkMd' auto
-			'...... lists  active teams  ......' auto
+			'...... tasks  active teams  ......' auto
 			'footer footer footer footer footer' auto/
 			1fr minmax(100px, 300px) minmax(100px, 300px) minmax(100px, 300px) 1fr;
 	}
@@ -61,7 +61,7 @@ body {
 	}
 
 	.all-lists {
-		grid-area: lists;
+		grid-area: tasks;
 		line-height: 1.5;
 	}
 	.active {

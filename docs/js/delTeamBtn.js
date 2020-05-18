@@ -1,10 +1,10 @@
 const deleteTeamBtn = document.querySelector('[data-delete-team-btn]');
 
 deleteTeamBtn.addEventListener('click', () => {
-	lists.forEach(list => {
-		for (let i = 0; i < list.team.length; i++) {
-			if (list.team[i] === selectedTeamId) {
-				list.team.splice(i, 1);
+	tasks.forEach(task => {
+		for (let i = 0; i < task.team.length; i++) {
+			if (task.team[i] === selectedTeamId) {
+				task.team.splice(i, 1);
 				i--;
 			}
 		}
