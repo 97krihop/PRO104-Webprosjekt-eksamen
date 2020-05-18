@@ -20,6 +20,7 @@ function save() {
 
 function saveAndRender() {
 	save();
+
 	renderTasks();
 	renderTeams();
 	rederActive();

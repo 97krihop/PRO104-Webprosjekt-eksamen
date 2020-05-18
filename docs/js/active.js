@@ -20,13 +20,8 @@ activeForm.addEventListener('submit', e => {
 
 function rederActive() {
 	const selectedTask = tasks.find(task => task.id === selectedTaskId);
-	if (
-		selectedTaskId === null ||
-		selectedTaskId === [] ||
-		selectedTaskId === undefined
-	) {
+	if (selectedTask === null || selectedTask === undefined) {
 		activeDiv.style.display = 'none';
-		return;
 	} else {
 		activeDiv.style.display = '';
 		activeTitle.innerText = selectedTask.name;
