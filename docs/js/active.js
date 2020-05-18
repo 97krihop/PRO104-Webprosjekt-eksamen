@@ -13,40 +13,45 @@ activeForm.addEventListener('submit', e => {
 		return;
 	}
 	activeInput.value = null;
-	const selectedList = lists.find(list => list.id === selectedListId);
-	selectedList.comments.push(comment);
+	const selectedTask = tasks.find(task => task.id === selectedTaskId);
+	selectedTask.comments.push(comment);
 	saveAndRender();
 });
 
 function rederActive() {
-	const selectedList = lists.find(list => list.id === selectedListId);
-	if (selectedListId === null) {
+	const selectedTask = tasks.find(task => task.id === selectedTaskId);
+	if (
+		selectedTaskId === null ||
+		selectedTaskId === [] ||
+		selectedTaskId === undefined
+	) {
 		activeDiv.style.display = 'none';
+		return;
 	} else {
 		activeDiv.style.display = '';
-		activeTitle.innerText = selectedList.name;
-		rednerTeams(selectedList);
-		rednerComments(selectedList);
+		activeTitle.innerText = selectedTask.name;
+		rednerTeams(selectedTask);
+		rednerComments(selectedTask);
 	}
 }
 
-function rednerComments(selectedList) {
+function rednerComments(selectedTask) {
 	clearElement(activeComments);
 
-	for (let i = 0; i < selectedList.comments.length; i++) {
+	for (let i = 0; i < selectedTask.comments.length; i++) {
 		const commentElement = document.createElement('li');
-		commentElement.classList.add('list-name');
-		commentElement.innerText = selectedList.comments[i];
+		commentElement.classList.add('task-name');
+		commentElement.innerText = selectedTask.comments[i];
 		activeComments.appendChild(commentElement);
 	}
 }
-function rednerTeams(selectedList) {
+function rednerTeams(selectedTask) {
 	clearElement(activeTeams);
 
-	for (let i = 0; i < selectedList.team.length; i++) {
+	for (let i = 0; i < selectedTask.team.length; i++) {
 		const teamElement = document.createElement('li');
 		teamElement.classList.add('team-name');
-		const teamId = selectedList.team[i];
+		const teamId = selectedTask.team[i];
 
 		teams.forEach(team => {
 			if (team.id === teamId) {

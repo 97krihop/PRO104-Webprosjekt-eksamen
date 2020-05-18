@@ -37,7 +37,7 @@ function renderTeams() {
 		teamElement.classList.add('team-name');
 		teamElement.innerText = team.name;
 		if (team.id === selectedTeamId) {
-			teamElement.classList.add('active-list');
+			teamElement.classList.add('active-task');
 		}
 		teamsDiv.appendChild(teamElement);
 	});
