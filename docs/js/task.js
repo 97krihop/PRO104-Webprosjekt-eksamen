@@ -4,7 +4,8 @@ const newTaskInput = document.querySelector('[data-new-task-input]');
 
 tasksDiv.addEventListener('click', e => {
 	if (e.target.tagName.toLowerCase() === 'li') {
-		selectedTaskId = e.target.dataset.taskId;
+		if (selectedTaskId === e.target.dataset.taskId) selectedTaskId = null;
+		else selectedTaskId = e.target.dataset.taskId;
 		saveAndRender();
 	}
 });

@@ -4,7 +4,8 @@ const newTeamInput = document.querySelector('[data-new-team-input]');
 
 teamsDiv.addEventListener('click', e => {
 	if (e.target.tagName.toLowerCase() === 'li') {
-		selectedTeamId = e.target.dataset.teamId;
+		if (selectedTeamId === e.target.dataset.teamId) selectedTeamId = null;
+		else selectedTeamId = e.target.dataset.teamId;
 		saveAndRender();
 	}
 });
