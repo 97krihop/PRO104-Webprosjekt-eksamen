@@ -2,6 +2,7 @@
 	--clr-light: #fefefe;
 	--clr-dark: #2f2f2f;
 	--clr-active: #ffaaaa;
+	--clr-complete: #99ee99;
 
 	--foreground: var(--clr-dark);
 	--background: var(--clr-light);
@@ -37,6 +38,10 @@ body {
 .active-task {
 	color: var(--clr-active);
 	font-size: larger;
+}
+.complete-task {
+	color: var(--clr-complete);
+	font-style: italic;
 }
 
 @media (min-width: 800px) {

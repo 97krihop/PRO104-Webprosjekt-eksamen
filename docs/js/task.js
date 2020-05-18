@@ -42,6 +42,9 @@ function renderTasks() {
 		if (task.id === selectedTaskId) {
 			taskElement.classList.add('active-task');
 		}
+		if (task.complete === true) {
+			taskElement.classList.add('complete-task');
+		}
 		tasksDiv.appendChild(taskElement);
 	});
 }
