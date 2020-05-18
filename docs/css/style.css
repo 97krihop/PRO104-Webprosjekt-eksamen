@@ -60,7 +60,7 @@ body {
 		font-weight: 900;
 	}
 
-	.all-lists {
+	.all-tasks {
 		grid-area: tasks;
 		line-height: 1.5;
 	}
