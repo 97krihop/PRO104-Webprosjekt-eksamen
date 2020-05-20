@@ -36,9 +36,14 @@ body {
 }
 
 .active-task {
+	font-family: var(--ff-title);
 	color: var(--clr-active);
 	font-size: larger;
+	font-style: bold;
+	border: solid var(--foreground) 1px;
+	width: min-content;
 }
+
 .complete-task,
 .complete-team {
 	color: var(--clr-complete);
@@ -71,11 +76,13 @@ body {
 		grid-area: tasks;
 		line-height: 1.5;
 	}
+
 	.active {
 		align-items: baseline;
 		top: 0px;
 		grid-area: active;
 	}
+
 	.darkmode-btn {
 		grid-area: darkMd;
 		width: 10%;
