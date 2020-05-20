@@ -30,6 +30,10 @@ body {
 	-o-transition: background 500ms ease-in-out, color 1000ms ease-in-out;
 }
 
+ul {
+	list-style-type: none;
+}
+
 .darkmode {
 	--foreground: var(--clr-light);
 	--background: var(--clr-dark);
@@ -41,13 +45,11 @@ body {
 	font-size: larger;
 	font-style: bold;
 	border: solid var(--foreground) 1px;
-	width: min-content;
 }
 
 .complete-task,
 .complete-team {
 	color: var(--clr-complete);
-	font-style: italic;
 }
 
 @media (min-width: 800px) {
