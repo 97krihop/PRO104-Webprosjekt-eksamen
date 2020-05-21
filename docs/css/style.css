@@ -1,13 +1,13 @@
 :root {
-	--clr-light: #fefefe;
-	--clr-dark: #2f2f2f;
-	--clr-active: #ffaaaa;
+	--clr-light: #e5e5e5;
+	--clr-dark: #14213d;
+	--clr-active: #fca311;
 
 	--foreground: var(--clr-dark);
 	--background: var(--clr-light);
 
 	--ff-title: 'Playfair Display', serif;
-	--ff-body: 'Assistant', sans-serif;
+	--ff-body: 'Fira Sans', sans-serif;
 }
 
 *,
@@ -29,27 +29,101 @@ body {
 	-o-transition: background 500ms ease-in-out, color 1000ms ease-in-out;
 }
 
+ul {
+	list-style-type: none;
+}
+
 .darkmode {
 	--foreground: var(--clr-light);
 	--background: var(--clr-dark);
 }
 
 .active-task {
+	font-family: var(--ff-title);
 	color: var(--clr-active);
 	font-size: larger;
+	font-style: bold;
+	border-left: dotted var(--clr-active) 2px;
+	border-radius: 5px;
 }
 
+.field {
+	width: 50%;
+	margin: 4rem 2rem 1rem 0rem;
+
+	position: relative;
+	border-bottom: 2px dashed var(--foreground);
+	transition: 500ms;
+}
+.label {
+	color: var(--clr-active);
+	font-size: 1.2rem;
+}
+.new {
+	outline: none;
+	border: none;
+	overflow: hidden;
+	margin: 0;
+	width: 100%;
+	padding: 0.25rem 0;
+	background: none;
+	color: white;
+	font-size: 1.2em;
+	font-weight: bolder;
+	transition: border 500ms;
+}
+
+.field::after {
+	content: '';
+	position: relative;
+	display: block;
+	height: 4px;
+	width: 100%;
+	background: var(--clr-active);
+	transform: scaleX(0);
+	transform-origin: 0%;
+	opacity: 0;
+	transition: all 500ms ease;
+	top: 2px;
+}
+.field:focus-within {
+	border-color: transparent;
+}
+.field:focus-within::after {
+	transform: scaleX(1);
+	opacity: 1;
+}
+
+.label {
+	left: 0px;
+	bottom: -1.5rem;
+	z-index: -1;
+	position: absolute;
+	transform: translateY(-2rem);
+	transform-origin: 0%;
+	transition: transform 400ms;
+}
+.field:focus-within .label {
+	transform: scale(0.8) translateY(-5rem);
+	opacity: 1;
+}
+
+.btn {
+	position: relative;
+}
+
+/* webapge over 800 px */
 @media (min-width: 800px) {
 	body {
 		font-weight: 300;
 		font-size: 1.5rem;
-		align-items: center;
+		align-items: baseline;
 		display: grid;
 		grid:
 			'header header header header darkMd' auto
 			'...... tasks  active teams  ......' auto
 			'footer footer footer footer footer' auto/
-			1fr minmax(100px, 300px) minmax(100px, 300px) minmax(100px, 300px) 1fr;
+			1fr minmax(100px, 400px) minmax(100px, 400px) minmax(100px, 400px) 1fr;
 	}
 
 	.title {
@@ -60,19 +134,27 @@ body {
 		font-weight: 900;
 	}
 
-	.all-lists {
+
+
+	.all-tasks {
+		top: 0px;
 		grid-area: tasks;
 		line-height: 1.5;
 	}
+
 	.active {
+		align-items: baseline;
+		top: 0px;
 		grid-area: active;
 	}
+
 	.darkmode-btn {
 		grid-area: darkMd;
 		width: 10%;
 	}
 
 	.team-members {
+		top: 0px;
 		grid-area: teams;
 		line-height: 1.5;
 	}

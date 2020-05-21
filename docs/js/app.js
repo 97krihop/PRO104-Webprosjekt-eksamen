@@ -1,5 +1,3 @@
-const mergeBtn = document.querySelector('[data-merge-btn]');
-
 const LOCAL_STORAGE_TASK_KEY = 'task.tasks';
 const LOCAL_STORAGE_SELECTED_TASK_ID_KEY = 'task.selectedTaskId';
 let tasks = JSON.parse(localStorage.getItem(LOCAL_STORAGE_TASK_KEY)) || [];
@@ -36,20 +34,4 @@ function clearElement(element) {
 	}
 }
 
-mergeBtn.addEventListener('click', e => {
-	addTeamToTask();
-});
-
-function addTeamToTask() {
-	tasks.forEach(task => {
-		if (task.id !== selectedTaskId) {
-			return;
-		} else {
-			task.team.push(selectedTeamId);
-			uniq = [...new Set(task.team)];
-			task.team = uniq;
-			saveAndRender();
-		}
-	});
-}
 saveAndRender();

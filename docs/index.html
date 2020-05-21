@@ -8,7 +8,7 @@
 			rel="stylesheet"
 		/>
 		<link
-			href="https://fonts.googleapis.com/css2?family=Assistant&display=swap"
+			href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap"
 			rel="stylesheet"
 		/>
 		<link rel="stylesheet" href="css/style.css" />
@@ -24,20 +24,23 @@
 			<ul class="task-task" data-tasks></ul>
 
 			<form action="" data-new-task-form>
-				<input
-					type="text"
-					class="new task"
-					placehoder="new task name"
-					aria-label="new task name"
-					data-new-task-input
-				/>
-				<button class="btn create" aria-label="create new task">
-					+
-				</button>
+				<div class="field">
+					<input
+						type="text"
+						class="new task"
+						placehoder=""
+						aria-label="new task name"
+						data-new-task-input
+					/>
+					<label for="text" class="label">Task</label>
+				</div>
 			</form>
 
 			<button class="btn delete" data-delete-task-btn>
 				Delete task
+			</button>
+			<button class="btn delete" data-clr-comp-tasks-button>
+				Delete completed tasks
 			</button>
 		</div>
 
@@ -46,46 +49,46 @@
 		<div class="active" data-active-div>
 			<h2 data-active-h2></h2>
 
-			<h4 class="txt">team-meber on task:</h4>
+			<h4 class="txt">team:</h4>
 			<ul class="active-team" data-active-team></ul>
 
 			<h4 class="txt">comments:</h4>
 			<ul class="active-comment" data-active-comment></ul>
 
 			<form action="" data-new-active-form>
-				<input
-					type="text"
-					class="new comment"
-					placehoder="new comment"
-					aria-label="new comment"
-					data-new-active-input
-				/>
-				<button class="btn create" aria-label="create new comment">
-					+
-				</button>
+				<div class="field">
+					<input
+						type="text"
+						class="new comment"
+						placehoder=""
+						aria-label="new comment"
+						data-new-active-input
+					/>
+					<label for="text" class="label">Comment</label>
+				</div>
 			</form>
 			<button class="btn complete" data-active-complete-btn>
 				Complete task
 			</button>
 		</div>
 
-		<!-- team -->
+		<!-- team members -->
 
 		<div class="team-members">
 			<h2>Team mebers</h2>
 			<ul class="task-list" data-teams></ul>
 
 			<form action="" data-new-team-form>
-				<input
-					type="text"
-					class="new team-member"
-					placehoder="new team-member"
-					aria-label="new team-member"
-					data-new-team-input
-				/>
-				<button class="btn create" aria-label="create new team-member">
-					+
-				</button>
+				<div class="field">
+					<input
+						type="text"
+						class="new team-member"
+						placehoder="new team-member"
+						aria-label="new team-member"
+						data-new-team-input
+					/>
+					<label for="text" class="label">Comment</label>
+				</div>
 			</form>
 			<button class="btn merge" data-merge-btn>
 				Merge
@@ -105,7 +108,9 @@
 		<script defer src="js/active.js"></script>
 		<script defer src="js/delTaskBtn.js"></script>
 		<script defer src="js/delTeamBtn.js"></script>
+		<script defer src="js/mergeBtn.js"></script>
 		<script defer src="js/completeBtn.js"></script>
+		<script defer src="js/clrCompletedTasks.js"></script>
 		<script defer src="js/app.js"></script>
 	</body>
 </html>
