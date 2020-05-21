@@ -8,7 +8,7 @@
 			rel="stylesheet"
 		/>
 		<link
-			href="https://fonts.googleapis.com/css2?family=Assistant&display=swap"
+			href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap"
 			rel="stylesheet"
 		/>
 		<link rel="stylesheet" href="css/style.css" />
@@ -24,16 +24,16 @@
 			<ul class="task-task" data-tasks></ul>
 
 			<form action="" data-new-task-form>
-				<input
-					type="text"
-					class="new task"
-					placehoder="new task name"
-					aria-label="new task name"
-					data-new-task-input
-				/>
-				<button class="btn create" aria-label="create new task">
-					+
-				</button>
+				<div class="field">
+					<input
+						type="text"
+						class="new task"
+						placehoder=""
+						aria-label="new task name"
+						data-new-task-input
+					/>
+					<label for="text" class="label">Task</label>
+				</div>
 			</form>
 
 			<button class="btn delete" data-delete-task-btn>
@@ -56,16 +56,16 @@
 			<ul class="active-comment" data-active-comment></ul>
 
 			<form action="" data-new-active-form>
-				<input
-					type="text"
-					class="new comment"
-					placehoder="new comment"
-					aria-label="new comment"
-					data-new-active-input
-				/>
-				<button class="btn create" aria-label="create new comment">
-					+
-				</button>
+				<div class="field">
+					<input
+						type="text"
+						class="new comment"
+						placehoder=""
+						aria-label="new comment"
+						data-new-active-input
+					/>
+					<label for="text" class="label">Comment</label>
+				</div>
 			</form>
 			<button class="btn complete" data-active-complete-btn>
 				Complete task
@@ -79,16 +79,16 @@
 			<ul class="task-list" data-teams></ul>
 
 			<form action="" data-new-team-form>
-				<input
-					type="text"
-					class="new team-member"
-					placehoder="new team-member"
-					aria-label="new team-member"
-					data-new-team-input
-				/>
-				<button class="btn create" aria-label="create new team-member">
-					+
-				</button>
+				<div class="field">
+					<input
+						type="text"
+						class="new team-member"
+						placehoder="new team-member"
+						aria-label="new team-member"
+						data-new-team-input
+					/>
+					<label for="text" class="label">Comment</label>
+				</div>
 			</form>
 			<button class="btn merge" data-merge-btn>
 				Merge
