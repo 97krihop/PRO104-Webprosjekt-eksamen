@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- fonts -->
 		<link
 			href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap"
 			rel="stylesheet"
@@ -11,18 +12,21 @@
 			href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap"
 			rel="stylesheet"
 		/>
+		<!-- styling -->
 		<link rel="stylesheet" href="css/style.css" />
-		<title>Eksamen</title>
+		<title>QuickFix</title>
 	</head>
+
 	<body>
-		<h2 class="title">QickFix</h2>
+		<!-- title -->
+		<h2 class="title">QuickFix</h2>
 
 		<!-- task -->
-
 		<div class="all-tasks">
 			<h2>MY TASKS</h2>
+			<!-- list of tasks -->
 			<ul class="task-task" data-tasks></ul>
-
+			<!-- innput -->
 			<form action="" data-new-task-form>
 				<div class="field">
 					<input
@@ -35,6 +39,7 @@
 					<label for="text" class="label">TASK</label>
 				</div>
 			</form>
+			<!-- buttons -->
 			<button class="btn delete" data-clr-comp-tasks-button>
 				Delete completed tasks
 			</button>
@@ -46,14 +51,18 @@
 		<!-- active area-->
 
 		<div class="active" data-active-div>
+			<!-- the active task -->
 			<h2 data-active-h2></h2>
 
+			<!-- team on the task -->
 			<h4 class="txt">Team:</h4>
 			<ul class="active-team" data-active-team></ul>
 
+			<!-- comments -->
 			<h4 class="txt">Comments:</h4>
 			<ul class="active-comment" data-active-comment></ul>
 
+			<!-- innput -->
 			<form action="" data-new-active-form>
 				<div class="field">
 					<input
@@ -66,6 +75,7 @@
 					<label for="text" class="label">COMMENT</label>
 				</div>
 			</form>
+			<!-- button -->
 			<button class="btn complete" data-active-complete-btn>
 				Complete task
 			</button>
@@ -75,8 +85,10 @@
 
 		<div class="team-members">
 			<h2>TEAM MEMBERS</h2>
+			<!-- list of team members -->
 			<ul class="task-list" data-teams></ul>
 
+			<!-- innput -->
 			<form action="" data-new-team-form>
 				<div class="field">
 					<input
@@ -89,6 +101,7 @@
 					<label for="text" class="label">TEAM MEMBER</label>
 				</div>
 			</form>
+			<!-- button -->
 			<button class="btn merge" data-merge-btn>
 				Merge
 			</button>
