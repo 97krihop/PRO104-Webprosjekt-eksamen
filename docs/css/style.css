@@ -150,6 +150,17 @@ ul {
 	right: 80%;
 }
 
+.emoji-btn,
+.darkmode-btn {
+	top: 0px;
+	position: absolute;
+	width: 100px;
+	right: 0px;
+}
+.emoji-btn {
+	left: 0px;
+}
+
 /* webapge over 800 px */
 @media (min-width: 800px) {
 	body {
@@ -158,7 +169,7 @@ ul {
 		align-items: baseline;
 		display: grid;
 		grid:
-			'header header header header darkMd' auto
+			'header header header header header' auto
 			'...... tasks  active teams  ......' auto
 			'footer footer footer footer footer' auto/
 			1fr minmax(100px, 400px) minmax(100px, 400px) minmax(100px, 400px) 1fr;
@@ -182,13 +193,6 @@ ul {
 		align-items: baseline;
 		top: 0px;
 		grid-area: active;
-	}
-
-	.darkmode-btn {
-		position: absolute;
-		grid-area: darkMd;
-		width: 100px;
-		right: 0;
 	}
 
 	.team-members {

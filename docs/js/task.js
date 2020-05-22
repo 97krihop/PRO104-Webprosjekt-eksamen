@@ -3,32 +3,6 @@ const tasksDiv = document.querySelector('[data-tasks]');
 const newTaskForm = document.querySelector('[data-new-task-form]');
 const newTaskInput = document.querySelector('[data-new-task-input]');
 
-// allowed emoji on tasks
-const allowedEmoji = [
-	'😊',
-	'🙃',
-	'🤪',
-	'🤓',
-	'🤯',
-	'😴',
-	'💩',
-	'👻',
-	'👽',
-	'🤖',
-	'👾',
-	'👐',
-	'🖖',
-	'✌️',
-	'🤟',
-	'🤘',
-	'🤙',
-	'👋',
-	'🐭',
-	'🦕',
-	'🦖',
-	'🐉'
-];
-
 // EventListener on tasks
 tasksDiv.addEventListener('click', e => {
 	if (e.target.tagName.toLowerCase() === 'li') {
@@ -59,7 +33,7 @@ function createTask(name) {
 		team: [],
 		comments: [],
 		complete: false,
-		emoji: Math.floor(Math.random() * allowedEmoji.length)
+		emoji: randomEmoji()
 	};
 }
 
@@ -72,7 +46,9 @@ function renderTasks() {
 		taskElement.classList.add('task-name');
 		// to see if it is complete
 		if (task.complete === true) taskElement.innerText = '✔' + task.name;
-		else taskElement.innerText = allowedEmoji[task.emoji] + task.name;
+		else if (task.emoji !== -1)
+			taskElement.innerText = allowedEmoji[task.emoji] + task.name;
+		else taskElement.innerText = task.name;
 		// add the class to the selected task
 		if (task.id === selectedTaskId) {
 			taskElement.classList.add('active-task');
