@@ -168,12 +168,12 @@ ul {
 		align-items: center;
 		display: grid;
 		grid:
-			'header' auto
-			'tasks ' auto
-			'active' auto
-			'teams ' auto
-			'footer' auto/
-			minmax(100px, 800px);
+			'... header ...' auto
+			'... tasks  ...' auto
+			'... active ...' auto
+			'... teams  ...' auto
+			'... footer ...' auto/
+			1fr minmax(100px, 400px) 1fr;
 	}
 	.title {
 		grid-area: header;

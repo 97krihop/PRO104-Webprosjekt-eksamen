@@ -43,11 +43,11 @@ function rederActive() {
 function rednerTeams(selectedTask) {
 	clearElement(activeTeams);
 	// list out the selcted on the task and dem on a li
-	for (let i = 0; i < selectedTask.team.length; i++) {
+	selectedTask.team.forEach(taskTeam => {
 		const teamElement = document.createElement('li');
 		teamElement.classList.add('team-name');
 		// get tear id
-		const teamId = selectedTask.team[i];
+		const teamId = taskTeam;
 		// render the name of all inn teamId  from teams
 		teams.forEach(team => {
 			if (team.id === teamId) {
@@ -55,16 +55,16 @@ function rednerTeams(selectedTask) {
 			}
 		});
 		activeTeams.appendChild(teamElement);
-	}
+	});
 }
 
 function rednerComments(selectedTask) {
 	clearElement(activeComments);
 	// lists out all the comments on the task
-	for (let i = 0; i < selectedTask.comments.length; i++) {
+	selectedTask.comments.forEach(comment => {
 		const commentElement = document.createElement('li');
 		commentElement.classList.add('task-name');
-		commentElement.innerText = selectedTask.comments[i];
+		commentElement.innerText = comment;
 		activeComments.appendChild(commentElement);
-	}
+	});
 }
