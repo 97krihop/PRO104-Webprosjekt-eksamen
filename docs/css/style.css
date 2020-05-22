@@ -118,7 +118,7 @@ ul {
 	cursor: pointer;
 	font-size: 16px;
 	position: relative;
-	margin-bottom: 20px;
+	margin: 10px;
 }
 
 .btn::before,
@@ -159,6 +159,59 @@ ul {
 }
 .emoji-btn {
 	left: 0px;
+}
+@media (max-width: 799px) {
+	body {
+		padding-left: 10px;
+		font-weight: 300;
+		font-size: 1.5rem;
+		align-items: center;
+		display: grid;
+		grid:
+			'header' auto
+			'tasks ' auto
+			'active' auto
+			'teams ' auto
+			'footer' auto/
+			minmax(100px, 800px);
+	}
+	.title {
+		grid-area: header;
+		font-family: var(--ff-title);
+		text-align: center;
+		font-size: calc(2vw + 2rem);
+		font-weight: 900;
+	}
+
+	.all-tasks {
+		align-items: center;
+		top: 0px;
+		grid-area: tasks;
+		line-height: 2;
+	}
+
+	.active {
+		align-items: center;
+		top: 0px;
+		grid-area: active;
+	}
+
+	.team-members {
+		align-items: center;
+		top: 0px;
+		grid-area: teams;
+		line-height: 2;
+	}
+	.emoji-btn,
+	.darkmode-btn {
+		top: 0px;
+		position: absolute;
+		width: 70px;
+		right: 0px;
+	}
+	.btn {
+		font-size: 14px;
+	}
 }
 
 /* webapge over 800 px */
