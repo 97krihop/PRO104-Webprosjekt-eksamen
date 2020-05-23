@@ -36,6 +36,7 @@ function renderTeams() {
 		const teamElement = document.createElement('li');
 		teamElement.dataset.teamId = team.id;
 		teamElement.classList.add('team-name');
+		teamElement.setAttribute("draggable", true);
 		teamElement.innerText = team.name;
 		if (team.id === selectedTeamId) {
 			teamElement.classList.add('active-task');
@@ -43,3 +44,8 @@ function renderTeams() {
 		teamsDiv.appendChild(teamElement);
 	});
 }
+
+function drag(ev) {
+	ev.dataTransfer.setData("text", ev.target.id);
+	console.log(ev.target.id);
+  }

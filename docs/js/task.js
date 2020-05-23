@@ -74,6 +74,9 @@ function renderTasks() {
 		if (task.complete === true) {
 			taskElement.classList.add('complete-task');
 		}
+		
 		tasksDiv.appendChild(taskElement);
 	});
 }
+
+
