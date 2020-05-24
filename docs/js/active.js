@@ -39,7 +39,7 @@ function rederActive() {
 		rednerComments(selectedTask);
 	}
 }
-// redner team on the task
+// render team on the task
 function rednerTeams(selectedTask) {
 	clearElement(activeTeams);
 	// list out the selcted on the task and dem on a li
