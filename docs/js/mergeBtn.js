@@ -19,10 +19,6 @@ mergeBtn.addEventListener('click', () => {
 		}
 		// add the selected team member
 		task.team.push(selectedTeamId);
-		// see if all are uniq
-		uniq = [...new Set(task.team)];
-		// set all the uniq to the task.team
-		task.team = uniq;
 		saveAndRender();
 	});
 });
