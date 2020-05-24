@@ -44,7 +44,7 @@ function renderTasks() {
 		const taskElement = document.createElement('li');
 		taskElement.dataset.taskId = task.id;
 		taskElement.classList.add('task-name');
-		teamElement.setAttribute("ondragstart", "drag(event)");
+		taskElement.setAttribute("ondragstart", "drag(event)");
 		// to see if it is complete
 		if (task.complete === true) taskElement.innerText = '✔' + task.name;
 		else if (task.emoji !== -1)
