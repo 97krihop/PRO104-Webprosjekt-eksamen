@@ -50,6 +50,7 @@ function renderTeams() {
 }
 
 function drag(event) {
-	event.dataTransfer.setData("text", event.target.id);
+	event.dataTransfer.setData("text", JSON.parse(localStorage.getItem("task.selectedTeamId")));
+	//console.log(JSON.parse(localStorage.getItem("task.selectedTeamId")));
 	//event.preventDefault()
   }

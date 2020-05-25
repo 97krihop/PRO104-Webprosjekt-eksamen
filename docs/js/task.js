@@ -44,7 +44,9 @@ function renderTasks() {
 		const taskElement = document.createElement('li');
 		taskElement.dataset.taskId = task.id;
 		taskElement.classList.add('task-name');
-		taskElement.setAttribute("ondragstart", "drag(event)");
+		//taskElement.setAttribute("ondragstart", "drag(event)");
+		taskElement.setAttribute("ondrop", "drop(event)");
+		taskElement.setAttribute("ondragover", "allowDrop(event)");
 		// to see if it is complete
 		if (task.complete === true) taskElement.innerText = '✔' + task.name;
 		else if (task.emoji !== -1)
@@ -63,4 +65,15 @@ function renderTasks() {
 	});
 }
 
+//Pushes teammembers to task array when dropping teammembers
+function drop(ev){
+	tasks.forEach(task => {
+		task.team.push(selectedTeamId);
+	});
+}
+
+//Allow dropping teammembers onto tasks
+function allowDrop(ev){
+	ev.preventDefault();
+}
 
