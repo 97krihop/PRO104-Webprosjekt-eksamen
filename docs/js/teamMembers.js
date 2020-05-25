@@ -40,7 +40,7 @@ function renderTeams() {
 		teamElement.dataset.teamId = team.id;
 		teamElement.classList.add('team-name');
 		teamElement.setAttribute("draggable", true);
-		teamElement.setAttribute("ondragstart", "drag(event)");
+		teamElement.setAttribute("ondragstart", "drag(ev)");
 		teamElement.innerText = team.name;
 		if (team.id === selectedTeamId) {
 			teamElement.classList.add('active-task');
@@ -49,8 +49,9 @@ function renderTeams() {
 	});
 }
 
-function drag(event) {
-	event.dataTransfer.setData("text", JSON.parse(localStorage.getItem("task.selectedTeamId")));
+function drag(ev) {
+	
+	ev.dataTransfer.setData("text", JSON.parse(localStorage.getItem("task.selectedTeamId")));
 	//console.log(JSON.parse(localStorage.getItem("task.selectedTeamId")));
 	//event.preventDefault()
   }

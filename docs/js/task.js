@@ -70,6 +70,8 @@ function drop(ev){
 	tasks.forEach(task => {
 		task.team.push(selectedTeamId);
 	});
+	renderTasks();
+	saveAndRender();
 }
 
 //Allow dropping teammembers onto tasks
