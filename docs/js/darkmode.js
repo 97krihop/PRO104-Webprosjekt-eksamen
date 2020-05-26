@@ -1,4 +1,4 @@
-// get elements form DOM
+// get elements from DOM
 const darkModeToggle = document.querySelector('[data-darkmode-toggle]');
 // get item from local storage
 let darkMode = localStorage.getItem('darkMode');

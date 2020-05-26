@@ -1,4 +1,4 @@
-// get elements form DOM
+// get elements from DOM
 const clrCompButton = document.querySelector('[data-clr-comp-tasks-button]');
 
 // EventListener on clear complete tasks button

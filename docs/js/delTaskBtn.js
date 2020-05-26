@@ -1,4 +1,4 @@
-// get elements form DOM
+// get elements from DOM
 const deleteTaskBtn = document.querySelector('[data-delete-task-btn]');
 
 // EventListener on delete task button

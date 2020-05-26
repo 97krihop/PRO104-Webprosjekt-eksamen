@@ -1,4 +1,4 @@
-// get elements form DOM
+// get elements from DOM
 const tasksDiv = document.querySelector('[data-tasks]');
 const newTaskForm = document.querySelector('[data-new-task-form]');
 const newTaskInput = document.querySelector('[data-new-task-input]');
@@ -11,7 +11,7 @@ tasksDiv.addEventListener('click', e => {
 		saveAndRender();
 	}
 });
-// EventListener on innput
+// EventListener on input
 newTaskForm.addEventListener('submit', e => {
 	e.preventDefault();
 	const taskName = newTaskInput.value;

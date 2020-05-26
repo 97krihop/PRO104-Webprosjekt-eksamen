@@ -1,4 +1,4 @@
-// get elements form DOM
+// get elements from DOM
 const emojiBtn = document.querySelector('[data-emoji-toggle]');
 // get item from local storage
 let emojiStatus = localStorage.getItem('emojiMode');

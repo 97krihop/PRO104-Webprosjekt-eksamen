@@ -27,7 +27,7 @@ function saveAndRender() {
 
 	renderTasks();
 	renderTeams();
-	rederActive();
+	renderActive();
 }
 // clear the elements form the paramenter
 function clearElement(element) {

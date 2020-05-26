@@ -1,4 +1,4 @@
-// get elements form DOM
+// get elements from DOM
 const activeCompleteBtn = document.querySelector('[data-active-complete-btn]');
 
 // EventListener on complete button

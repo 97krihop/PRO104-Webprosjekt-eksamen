@@ -1,4 +1,4 @@
-// get elements form DOM
+// get elements from DOM
 const activeDiv = document.querySelector('[data-active-div]');
 const activeTitle = document.querySelector('[data-active-h2]');
 const activeCompBtn = document.querySelector('[data-active-complete-btn]');
@@ -7,6 +7,7 @@ const activeComments = document.querySelector('[data-active-comment]');
 const activeForm = document.querySelector('[data-new-active-form]');
 const activeInput = document.querySelector('[data-new-active-input]');
 const dateText = document.querySelector('[data-date-text]');
+
 // EventListener on comment input
 activeForm.addEventListener('submit', e => {
 	e.preventDefault();
@@ -23,7 +24,7 @@ activeForm.addEventListener('submit', e => {
 	saveAndRender();
 });
 // render the active task
-function rederActive() {
+function renderActive() {
 	// find the selected task
 	const selectedTask = tasks.find(task => task.id === selectedTaskId);
 

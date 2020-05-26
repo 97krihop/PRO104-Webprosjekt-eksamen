@@ -1,4 +1,4 @@
-// get elements form DOM
+// get elements from DOM
 const teamsDiv = document.querySelector('[data-teams]');
 const newTeamForm = document.querySelector('[data-new-team-form]');
 const newTeamInput = document.querySelector('[data-new-team-input]');
@@ -11,7 +11,7 @@ teamsDiv.addEventListener('click', e => {
 		saveAndRender();
 	}
 });
-//EventListener on team member innput
+//EventListener on team member input
 newTeamForm.addEventListener('submit', e => {
 	e.preventDefault();
 	const teamName = newTeamInput.value;
@@ -24,7 +24,7 @@ newTeamForm.addEventListener('submit', e => {
 		saveAndRender();
 	}
 });
-// making Team member
+// making team member
 function createTeam(name) {
 	return {
 		id: Date.now().toString(),
@@ -32,7 +32,7 @@ function createTeam(name) {
 	};
 }
 // render all the team members
-// and adds a active class and mark s it as the active one
+// and adds an active class and marks it as the active one
 function renderTeams() {
 	clearElement(teamsDiv);
 	teams.forEach(team => {
