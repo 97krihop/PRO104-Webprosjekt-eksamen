@@ -17,12 +17,12 @@
 		<title>QuickFix</title>
 	</head>
 
-	<body>
+	<body role="main">
 		<!-- title -->
-		<h2 class="title">QuickFix</h2>
+		<h1 class="title" role="banner">QuickFix</h1>
 
 		<!-- task -->
-		<div class="all-tasks">
+		<div class="all-tasks" role="main" aria-labelledby="Tasks">
 			<h2>MY TASKS</h2>
 			<!-- list of tasks -->
 			<ul class="task-task" data-tasks></ul>
@@ -50,7 +50,7 @@
 
 		<!-- active area-->
 
-		<div class="active" data-active-div>
+		<div class="active" data-active-div role="form">
 			<!-- the active task -->
 			<h2 data-active-h2></h2>
 
@@ -83,7 +83,7 @@
 
 		<!-- team members -->
 
-		<div class="team-members">
+		<div class="team-members" role="main" aria-labelledby="Team-meber">
 			<h2>TEAM MEMBERS</h2>
 			<!-- list of team members -->
 			<ul class="task-list" data-teams></ul>
@@ -111,10 +111,14 @@
 		</div>
 
 		<!-- darkmode -->
-		<button class="darkmode-btn btn" data-darkmode-toggle>dark</button>
+		<button class="darkmode-btn btn" data-darkmode-toggle role="button">
+			dark
+		</button>
 
 		<!-- emojiMode -->
-		<button class="emoji-btn btn" data-emoji-toggle>emoji</button>
+		<button class="emoji-btn btn" data-emoji-toggle role="button">
+			emoji
+		</button>
 
 		<!-- script -->
 		<script defer src="js/darkmode.js"></script>

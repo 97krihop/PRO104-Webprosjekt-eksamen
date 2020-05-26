@@ -1,5 +1,5 @@
 :root {
-	--clr-light: #e5e5e5;
+	--clr-light: #ffffff;
 	--clr-dark: #14213d;
 	--clr-active: #fca311;
 
@@ -66,7 +66,7 @@ ul {
 	width: 100%;
 	padding: 0.25rem 0;
 	background: none;
-	color: white;
+	color: var(--foreground);
 	font-size: 1.2em;
 	font-weight: bolder;
 	transition: border 500ms;
