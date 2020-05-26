@@ -12,17 +12,18 @@
 			href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap"
 			rel="stylesheet"
 		/>
+		<link rel="icon" type="image/x-icon" href="/favicon.ico" />
 		<!-- styling -->
 		<link rel="stylesheet" href="css/style.css" />
 		<title>QuickFix</title>
 	</head>
 
-	<body role="main">
+	<body>
 		<!-- title -->
-		<h1 class="title" role="banner">QuickFix</h1>
+		<h1 class="title">QuickFix</h1>
 
 		<!-- task -->
-		<div class="all-tasks" role="main" aria-labelledby="Tasks">
+		<div class="all-tasks">
 			<h2>MY TASKS</h2>
 			<!-- list of tasks -->
 			<ul class="task-task" data-tasks></ul>
@@ -88,7 +89,7 @@
 
 		<!-- team members -->
 
-		<div class="team-members" role="main" aria-labelledby="Team-meber">
+		<div class="team-members">
 			<h2>TEAM MEMBERS</h2>
 			<!-- list of team members -->
 			<ul class="task-list" data-teams></ul>
@@ -108,10 +109,10 @@
 			</form>
 			<!-- button -->
 			<button class="btn merge" data-merge-btn>
-				Merge
+				add team member to task
 			</button>
 			<button class="btn delete" data-delete-team-btn>
-				Delete team-member
+				Delete team member
 			</button>
 		</div>
 
