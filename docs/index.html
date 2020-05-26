@@ -12,6 +12,7 @@
 			href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap"
 			rel="stylesheet"
 		/>
+		<link rel="icon" type="image/x-icon" href="/favicon.ico" />
 		<!-- styling -->
 		<link rel="stylesheet" href="css/style.css" />
 		<title>QuickFix</title>
@@ -19,7 +20,7 @@
 
 	<body>
 		<!-- title -->
-		<h2 class="title">QuickFix</h2>
+		<h1 class="title">QuickFix</h1>
 
 		<!-- task -->
 		<div class="all-tasks">
@@ -50,7 +51,7 @@
 
 		<!-- active area-->
 
-		<div class="active" data-active-div>
+		<div class="active" data-active-div role="form">
 			<!-- the active task -->
 			<h2 data-active-h2></h2>
 
@@ -103,21 +104,25 @@
 			</form>
 			<!-- button -->
 			<button class="btn merge" data-merge-btn>
-				Merge
+				add team member to task
 			</button>
 			<button class="btn delete" data-delete-team-btn>
-				Delete team-member
+				Delete team member
 			</button>
 		</div>
 
 		<!-- darkmode -->
-		<button class="darkmode-btn btn" data-darkmode-toggle>dark</button>
+		<button class="darkmode-btn btn" data-darkmode-toggle role="button">
+			dark
+		</button>
 
 		<!-- emojiMode -->
-		<button class="emoji-btn btn" data-emoji-toggle>emoji</button>
+		<button class="emoji-btn btn" data-emoji-toggle role="button">
+			emoji
+		</button>
 
 		<!-- script -->
-		<script src="js/darkmode.js"></script>
+		<script defer src="js/darkmode.js"></script>
 		<script defer src="js/task.js"></script>
 		<script defer src="js/teamMembers.js"></script>
 		<script defer src="js/active.js"></script>

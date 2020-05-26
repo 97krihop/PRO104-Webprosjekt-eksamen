@@ -1,10 +1,12 @@
 :root {
-	--clr-light: #e5e5e5;
+	--clr-light: #ffffff;
 	--clr-dark: #14213d;
-	--clr-active: #fca311;
+	--clr-dark-text: #fca311;
+	--clr-light-text: #007e94;
 
 	--foreground: var(--clr-dark);
 	--background: var(--clr-light);
+	--clr-active: var(--clr-light-text);
 
 	--ff-title: 'Playfair Display', serif;
 	--ff-body: 'Fira Sans', sans-serif;
@@ -35,6 +37,7 @@ ul {
 .darkmode {
 	--foreground: var(--clr-light);
 	--background: var(--clr-dark);
+	--clr-active: var(--clr-dark-text);
 }
 
 .active-task {
@@ -66,7 +69,7 @@ ul {
 	width: 100%;
 	padding: 0.25rem 0;
 	background: none;
-	color: white;
+	color: var(--foreground);
 	font-size: 1.2em;
 	font-weight: bolder;
 	transition: border 500ms;

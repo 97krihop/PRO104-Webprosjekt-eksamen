@@ -39,10 +39,16 @@ function renderTeams() {
 		const teamElement = document.createElement('li');
 		teamElement.dataset.teamId = team.id;
 		teamElement.classList.add('team-name');
+		teamElement.setAttribute('draggable', true);
+		teamElement.setAttribute('ondragstart', 'drag(Event)');
 		teamElement.innerText = team.name;
 		if (team.id === selectedTeamId) {
 			teamElement.classList.add('active-task');
 		}
 		teamsDiv.appendChild(teamElement);
 	});
+}
+
+function drag() {
+	selectedTeamId = event.target.dataset.teamId;
 }
