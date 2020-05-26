@@ -66,12 +66,12 @@ function renderTasks() {
 }
 
 //Pushes teammembers to task array when dropping teammembers
-function drop(ev) {
+function drop() {
 	merge();
 }
 
 //Allow dropping teammembers onto tasks
-function allowDrop(e) {
+function allowDrop() {
 	event.preventDefault();
 	selectedTaskId = event.target.dataset.taskId;
 }
