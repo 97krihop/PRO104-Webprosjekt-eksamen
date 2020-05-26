@@ -64,9 +64,16 @@
 			<ul class="active-comment" data-active-comment></ul>
 
 			<h4 class="txt">Deadline:</h4>
-			<h4 class="txt" id="deadline-text"></h4>
-			<input type="date" id="dateInput" name="dateDateline"
-      		value="2020-05-27" min="2020-05-27" max="2022-12-31" onchange="dateChange()">
+			<h4 class="txt" data-date-text></h4>
+			<input
+				type="date"
+				id="dateInput"
+				name="dateDateline"
+				value="2020-05-27"
+				min="2020-05-27"
+				max="2022-12-31"
+				onchange="dateChange()"
+			/>
 
 			<!-- innput -->
 			<form action="" data-new-active-form>

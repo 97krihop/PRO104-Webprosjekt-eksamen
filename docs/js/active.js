@@ -6,7 +6,7 @@ const activeTeams = document.querySelector('[data-active-team]');
 const activeComments = document.querySelector('[data-active-comment]');
 const activeForm = document.querySelector('[data-new-active-form]');
 const activeInput = document.querySelector('[data-new-active-input]');
-
+const dateText = document.querySelector('[data-date-text]');
 // EventListener on comment input
 activeForm.addEventListener('submit', e => {
 	e.preventDefault();
@@ -37,6 +37,7 @@ function rederActive() {
 		// render teams on task and comment on task
 		rednerTeams(selectedTask);
 		rednerComments(selectedTask);
+		renderDate(selectedTask);
 	}
 }
 // render team on the task
@@ -69,6 +70,29 @@ function rednerComments(selectedTask) {
 	});
 }
 
-function dateChange(){
-	document.getElementById("deadline-text").innerHTML = dateInput.value;
+function dateChange() {
+	const selectedTask = tasks.find(task => task.id === selectedTaskId);
+
+	if (dateInput.value != null) {
+		selectedTask.deadline = dateInput.value;
+		saveAndRender();
+	}
+}
+function renderDate(selectedTask) {
+	clearElement(dateText);
+	if (
+		selectedTask.deadline === null ||
+		selectedTask.deadline === '' ||
+		selectedTask.deadline === undefined
+	) {
+		dateText.innerText = selectedTask.deadline;
+	}
+}
+
+function upToDate(date) {
+	let now = new Date().toJSON().slice(0, 10);
+	if (date === null || date === '' || date === undefined) return true;
+	if (date >= now) {
+		return true;
+	} else return false;
 }

@@ -33,7 +33,8 @@ function createTask(name) {
 		team: [],
 		comments: [],
 		complete: false,
-		emoji: randomEmoji()
+		emoji: randomEmoji(),
+		deadline: ''
 	};
 }
 
@@ -48,10 +49,18 @@ function renderTasks() {
 		taskElement.setAttribute('ondrop', 'drop(event)');
 		taskElement.setAttribute('ondragover', 'allowDrop(Event)');
 		// to see if it is complete
-		if (task.complete === true) taskElement.innerText = '✔' + task.name;
-		else if (task.emoji !== -1)
+		if (task.complete === true) {
+			taskElement.innerText = '✔' + task.name;
+			taskElement.style.color = '	#7FFFD4';
+		} else if (task.emoji !== -1)
 			taskElement.innerText = allowedEmoji[task.emoji] + task.name;
 		else taskElement.innerText = task.name;
+		if (upToDate(task.deadline) === false) {
+			if (task.complete !== true) {
+				taskElement.style.color = '#DC143C';
+				taskElement.innerText = '❌' + task.name;
+			}
+		}
 		// add the class to the selected task
 		if (task.id === selectedTaskId) {
 			taskElement.classList.add('active-task');
