@@ -10,7 +10,7 @@ const activeInput = document.querySelector('[data-new-active-input]');
 // EventListener on comment input
 activeForm.addEventListener('submit', e => {
 	e.preventDefault();
-	// to se input if its empty
+	// to see input if its empty
 	const comment = activeInput.value;
 	if (comment === null || comment === '') {
 		return;
@@ -46,7 +46,7 @@ function rednerTeams(selectedTask) {
 	selectedTask.team.forEach(taskTeam => {
 		const teamElement = document.createElement('li');
 		teamElement.classList.add('team-name');
-		// get tear id
+		// get team id
 		const teamId = taskTeam;
 		// render the name of all inn teamId  from teams
 		teams.forEach(team => {
@@ -67,4 +67,8 @@ function rednerComments(selectedTask) {
 		commentElement.innerText = comment;
 		activeComments.appendChild(commentElement);
 	});
+}
+
+function dateChange(){
+	document.getElementById("deadline-text").innerHTML = dateInput.value;
 }
