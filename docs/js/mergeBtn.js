@@ -2,7 +2,9 @@
 const mergeBtn = document.querySelector('[data-merge-btn]');
 
 // EventListener to button
-mergeBtn.addEventListener('click', () => {
+mergeBtn.addEventListener('click', merge);
+
+function merge() {
 	tasks.forEach(task => {
 		// to return all the non selected tasks or if its null
 		if (task.id !== selectedTaskId || selectedTeamId == null) {
@@ -19,6 +21,8 @@ mergeBtn.addEventListener('click', () => {
 		}
 		// add the selected team member
 		task.team.push(selectedTeamId);
+		uniq = [...new Set(task.team)];
+		task.team = uniq;
 		saveAndRender();
 	});
-});
+}
