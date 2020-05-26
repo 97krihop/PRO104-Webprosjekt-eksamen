@@ -82,9 +82,9 @@ function dateChange() {
 function renderDate(selectedTask) {
 	clearElement(dateText);
 	if (
-		selectedTask.deadline === null ||
-		selectedTask.deadline === '' ||
-		selectedTask.deadline === undefined
+		selectedTask.deadline !== null ||
+		selectedTask.deadline !== '' ||
+		selectedTask.deadline !== undefined
 	) {
 		dateText.innerText = selectedTask.deadline;
 	}
