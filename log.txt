@@ -1,3 +1,257 @@
+commit c57e137c7e59930693fce717925b090ba29a94fd
+Author: Kristoffer <97krihop@gmail.com>
+Date:   Tue May 26 18:50:41 2020 +0200
+
+    bug fix dato
+
+commit 077d230244cfe7c839290144b37165905af838b3
+Author: Kristoffer <97krihop@gmail.com>
+Date:   Tue May 26 18:48:04 2020 +0200
+
+    bug favicon
+
+commit 67186deab840e288df8ef68518bcec994f57e7aa
+Author: hagenh <haakonhagen@live.no>
+Date:   Tue May 26 18:45:54 2020 +0200
+
+    typo
+
+commit 8696da66b92144cb2f79b834538e0e9925869b64
+Author: Kristoffer <97krihop@gmail.com>
+Date:   Tue May 26 18:26:44 2020 +0200
+
+    added styling to date
+
+commit dc37bb54cba7c6ee8e16ce34fdacdd13395cb4af
+Author: Kristoffer <97krihop@gmail.com>
+Date:   Tue May 26 18:16:17 2020 +0200
+
+    added date and color to tasks
+
+commit 2e4b711f0b98e60af7b2ccb8267e02c26123835c
+Merge: e4f7ddd 4258cc1
+Author: hagenh <haakonhagen@live.no>
+Date:   Tue May 26 16:28:11 2020 +0200
+
+    Merge branch 'master' of https://github.com/Westerdals/pro104-eksamen-gruppe18
+
+commit e4f7ddd3514d2e9c7ec39925231e85d0f72573e1
+Author: hagenh <haakonhagen@live.no>
+Date:   Tue May 26 16:28:07 2020 +0200
+
+    Deadlines
+
+commit 4258cc177548de1d9154497d6bf6f786a5e1ab75
+Author: Kristoffer <97krihop@gmail.com>
+Date:   Tue May 26 13:22:39 2020 +0200
+
+    added lang=en
+
+commit bd0b3d090c70a3a00b56f0ee22d1adfc344cc075
+Author: Kristoffer <97krihop@gmail.com>
+Date:   Tue May 26 13:16:31 2020 +0200
+
+    favicon
+
+commit e07fa1e661b4f644161009ae7f26131ed373b67d
+Author: Kristoffer <97krihop@gmail.com>
+Date:   Tue May 26 13:08:26 2020 +0200
+
+    axe plugin
+
+commit 4b2eee41abc7e51aa7c34a6e4c1c3b8db8c3fded
+Author: Kristoffer <97krihop@gmail.com>
+Date:   Tue May 26 12:44:24 2020 +0200
+
+    WP 2 godsjenning
+
+commit 21f9bdb50dee9a0ee542f53719332187cc8f748e
+Author: Kristoffer <97krihop@gmail.com>
+Date:   Tue May 26 12:10:40 2020 +0200
+
+    bug fix
+
+commit 627224bbd10534ec23008d20ce3ab5aacfefd90b
+Author: Kristoffer <97krihop@gmail.com>
+Date:   Tue May 26 12:06:06 2020 +0200
+
+    fix to drag and drop
+
+commit 626e863168ab28cd0c320a85c2baa534396e0eac
+Author: Kristoffer <97krihop@gmail.com>
+Date:   Tue May 26 11:47:35 2020 +0200
+
+    added defer
+
+commit 0de498cc7b06528537a8f15948076c91b8176c68
+Author: hagenh <haakonhagen@live.no>
+Date:   Mon May 25 22:52:30 2020 +0200
+
+    Litt testing osv, laster opp for å bruke annen pc
+
+commit 1929cfe372d548ebc70ebe3dc1c769d444051cb9
+Author: hagenh <haakonhagen@live.no>
+Date:   Mon May 25 19:03:03 2020 +0200
+
+    Oppdatering av tasks
+
+commit 119b92d7a60b0c57d699d9addfc6edab7667d6ee
+Author: hagenh <haakonhagen@live.no>
+Date:   Mon May 25 17:16:31 2020 +0200
+
+    drag & drop
+
+commit fa0600a916434e74c26f90f1b0bb59cecc333527
+Author: hagenh <haakonhagen@live.no>
+Date:   Sun May 24 20:23:56 2020 +0200
+
+    typo
+
+commit 62b161eeeef0c0b608a8a7947b75759ef4c5dc18
+Merge: 5f3e152 69dbea8
+Author: hagenh <haakonhagen@live.no>
+Date:   Sun May 24 19:53:04 2020 +0200
+
+    Merge branch 'master' of https://github.com/Westerdals/pro104-eksamen-gruppe18
+
+commit 5f3e152b341ee1e6cdb8b834949a190bb0b7d81e
+Author: hagenh <haakonhagen@live.no>
+Date:   Sun May 24 19:53:00 2020 +0200
+
+    småtteri
+
+commit 69dbea89b35af5472b966899bbb7cef4024e41cf
+Merge: 6b6ba56 7e93ec5
+Author: hagenh <haakonhagen@live.no>
+Date:   Sat May 23 13:49:50 2020 +0200
+
+    Merge branch 'master' of https://github.com/Westerdals/pro104-eksamen-gruppe18
+
+commit 6b6ba56b866b8a0a367022a1babfd481d6088e23
+Author: hagenh <haakonhagen@live.no>
+Date:   Sat May 23 13:49:38 2020 +0200
+
+    Mer drag&drop
+
+commit 7e93ec53b845398850c91f4527a3c977add07111
+Author: Kristoffer <97krihopgmail.com>
+Date:   Sat May 23 13:43:53 2020 +0200
+
+    removed defer
+
+commit 1d79a34b5cc82403bbc854555a7daa0fcb5ea6c1
+Merge: 39a67cc 6259613
+Author: hagenh <haakonhagen@live.no>
+Date:   Sat May 23 13:00:19 2020 +0200
+
+    Merge branch 'master' of https://github.com/Westerdals/pro104-eksamen-gruppe18
+
+commit 39a67cc77699c42b47a3b65be39868a208274c39
+Author: hagenh <haakonhagen@live.no>
+Date:   Sat May 23 13:00:14 2020 +0200
+
+    Drag test
+
+commit 7894a9fcd922edab240c920f2eafa51091721131
+Author: Kristoffer <97krihopgmail.com>
+Date:   Sat May 23 00:36:02 2020 +0200
+
+    clean out code
+
+commit e9e5972abb5cdb209f43fcae6053b0faa1ba8dee
+Author: Kristoffer <97krihopgmail.com>
+Date:   Fri May 22 18:45:30 2020 +0200
+
+    added mobil support
+
+commit 6259613207505543a8386ad157b9aac5f4aecee5
+Author: Kristoffer <97krihopgmail.com>
+Date:   Fri May 22 18:32:30 2020 +0200
+
+    added emoji btn for on or off
+
+commit 0473f141fa17eaf494db248f805e1aff2552f421
+Author: Kristoffer <97krihopgmail.com>
+Date:   Fri May 22 15:58:30 2020 +0200
+
+    added coments to all js and html files
+
+commit bf448dd07958850a554b8cbbaf34a95b576d111e
+Author: Kristoffer <97krihopgmail.com>
+Date:   Thu May 21 16:05:08 2020 +0200
+
+    added styling to botten
+
+commit 27426cb6bfbe4c39d11c4226f0449fac38636e93
+Merge: 4e39cee 1f96154
+Author: 97krihop <97krihop@gmail.com>
+Date:   Thu May 21 13:50:04 2020 +0200
+
+    Merge pull request #11 from Westerdals/Dev
+    
+    Dev
+
+commit 4e39cee2567397cfc8114746300211769524d997
+Author: Kristoffer <97krihopgmail.com>
+Date:   Thu May 21 13:47:33 2020 +0200
+
+    bugfix
+
+commit 1f961546878077601cd04a18abdc7b3078396150
+Merge: 82af4fe bcebfca
+Author: 97krihop <97krihop@gmail.com>
+Date:   Thu May 21 13:45:39 2020 +0200
+
+    Merge pull request #10 from Westerdals/revert-9-master
+    
+    Revert "0.3"
+
+commit bcebfca1fe8405fd0d2083f74f9f0bc25cada676
+Author: 97krihop <97krihop@gmail.com>
+Date:   Thu May 21 13:45:19 2020 +0200
+
+    Revert "0.3"
+
+commit 82af4fe89224f1c9e788b4828eb17b5cf57e7ed7
+Merge: 62705e9 b911143
+Author: 97krihop <97krihop@gmail.com>
+Date:   Thu May 21 13:44:22 2020 +0200
+
+    Merge pull request #9 from Westerdals/master
+    
+    0.3
+
+commit b91114335a5e3136b8b9673c39f7f12d1f1b7b08
+Merge: 112aef1 62705e9
+Author: 97krihop <97krihop@gmail.com>
+Date:   Thu May 21 13:44:14 2020 +0200
+
+    Merge branch 'Dev' into master
+
+commit 62705e92ffa220dd958cc77b0877968f2780aaf4
+Author: Kristoffer <97krihopgmail.com>
+Date:   Thu May 21 13:39:14 2020 +0200
+
+    added animations on innput field
+
+commit 800d67b4deb058e80c4b845bad75f39bf8082098
+Author: Kristoffer <97krihopgmail.com>
+Date:   Thu May 21 01:23:20 2020 +0200
+
+    added emoji
+
+commit dabf31794e8ae1d8d0baadbabe051ff06534d591
+Author: Kristoffer <97krihopgmail.com>
+Date:   Wed May 20 21:43:51 2020 +0200
+
+    added clear completed tasks
+
+commit 612fd4d27cb88879b5d77653fdb4c11d5b30aea0
+Author: kristoffer <97krihopgmail.com>
+Date:   Wed May 20 20:07:00 2020 +0200
+
+    added log file form git
+
 commit bfc26636f70a1f4ebccc23aba7d70f9adfdd5abe
 Author: kristoffer <97krihop@gmail.com>
 Date:   Mon May 18 14:33:12 2020 +0200
@@ -9,6 +263,15 @@ Author: kristoffer <97krihop@gmail.com>
 Date:   Mon May 18 13:59:28 2020 +0200
 
     added a way to remove a team meber from task
+
+commit 112aef14229c8240a52d5b85f66fc0481ba11578
+Merge: 11dd27a 76a20db
+Author: 97krihop <97krihop@gmail.com>
+Date:   Mon May 18 03:18:26 2020 +0200
+
+    Merge pull request #8 from Westerdals/Dev
+    
+    Dev
 
 commit 76a20db1ab88852126309a16dc30f8f080708573
 Author: kristoffer <97krihopgmail.com>
@@ -54,6 +317,13 @@ Date:   Mon May 18 03:14:13 2020 +0200
     
     Co-authored-by: kristoffer <97krihopgmail.com>
 
+commit 11dd27a153ac2484e8ba1e86aa50c49658a82e18
+Merge: 0acf79d 689da97
+Author: kristoffer <97krihop@gmail.com>
+Date:   Mon May 18 03:07:17 2020 +0200
+
+    Merge branch 'Dev'
+
 commit 689da97d6b8156efb4fff73e8d4e46bc12d60999
 Author: kristoffer <97krihopgmail.com>
 Date:   Mon May 18 02:53:50 2020 +0200
@@ -65,6 +335,44 @@ Author: kristoffer <97krihopgmail.com>
 Date:   Mon May 18 02:24:37 2020 +0200
 
     change name on list to task
+
+commit 0acf79d8cac0f2b91595d1e1dcbe73d91773da4f
+Author: 97krihop <24739853+97krihop@users.noreply.github.com>
+Date:   Sun May 17 23:04:08 2020 +0200
+
+    Dev (#5)
+    
+    * Test 1 (#4)
+    
+    * test 1
+    
+    * remove all
+    
+    * Revert "remove all"
+    
+    This reverts commit 2aa0ce843390c72a535ffdc34e44553f6fe6046f.
+    
+    * Revert "test 1"
+    
+    This reverts commit 163cb6d93ddc7f7caa45d80a63708fee25d8555d.
+    
+    * added teams and merge
+    
+    Co-authored-by: kristoffer <97krihopgmail.com>
+    
+    * added delete on team
+    
+    * added rednerComments
+    
+    * added form for coments
+    
+    * added teams to active feld
+    
+    * added complete task
+    
+    * prettify
+    
+    Co-authored-by: kristoffer <97krihopgmail.com>
 
 commit 452fa11affd361a71feeabf779ea0517ea31c77a
 Author: kristoffer <97krihopgmail.com>
@@ -124,190 +432,14 @@ Date:   Fri May 15 18:21:46 2020 +0200
     
     Co-authored-by: kristoffer <97krihopgmail.com>
 
-commit a5886667add8ff06dd9574aa82f5cad9b36c545e
-Author: kristoffer <97krihopgmail.com>
-Date:   Fri May 15 13:50:31 2020 +0200
-
-    splited app.js in to more files
-
-commit caad4bfafc8880c9b6b47b65027f04b181197867
-Author: kristoffer <97krihopgmail.com>
-Date:   Fri May 15 13:31:26 2020 +0200
-
-    added splited script file + bug fix
-
-commit a9c1e656755959b75af3c2c3c24e9200427db9e9
-Author: kristoffer <97krihopgmail.com>
-Date:   Fri May 15 06:25:07 2020 +0200
-
-    added Darkmode
-
-commit 569bd81ab2dd8843e87aaae0e23741461b2fcbe0
-Author: kristoffer <97krihopgmail.com>
-Date:   Fri May 15 00:24:30 2020 +0200
-
-    style
-
-commit 77bf26975d3158a05e6e63ad950df2c1f2eb1e4a
-Author: kristoffer <97krihopgmail.com>
-Date:   Fri May 15 00:21:12 2020 +0200
-
-    added tasks and clear buttons
-
-commit b38923b72d814da7fb74cdafaf171f918fbbc32d
-Author: kristoffer <97krihopgmail.com>
-Date:   Thu May 14 21:46:50 2020 +0200
-
-    added LOCAL_STORAGE
-
-commit 45bd92e7f3a5f2c0d7844eeef090008b42040926
-Author: kristoffer <97krihopgmail.com>
-Date:   Thu May 14 21:35:42 2020 +0200
-
-    added first list of lists
-
-commit fe40fa0a42a79222cb5711c46455cb1cf148616d
-Author: kristoffer <97krihopgmail.com>
-Date:   Thu May 14 20:05:40 2020 +0200
-
-    plain start
-
-commit aece04460188de17e56a8c92bc3f08ab33426d04
-Author: kristoffer <97krihopgmail.com>
-Date:   Thu May 14 18:33:14 2020 +0200
-
-    Hello World!
-
-commit 7d40b0a5bf1e01c741ddcb5f3d0b5758c37c0396
-Author: kristoffer <97krihopgmail.com>
-Date:   Thu May 14 12:24:25 2020 +0200
-
-    Initial commit
-commit bfc26636f70a1f4ebccc23aba7d70f9adfdd5abe
-Author: kristoffer <97krihop@gmail.com>
-Date:   Mon May 18 14:33:12 2020 +0200
-
-    added merge fix
-
-commit 4ca55578609de26bb6f44b99519491b0b68d9f44
-Author: kristoffer <97krihop@gmail.com>
-Date:   Mon May 18 13:59:28 2020 +0200
-
-    added a way to remove a team meber from task
-
-commit 76a20db1ab88852126309a16dc30f8f080708573
-Author: kristoffer <97krihopgmail.com>
-Date:   Mon May 18 03:17:32 2020 +0200
-
-    bug fixing after merger
-
-commit e2b958ac2242cc2ffd686dc5575814fad22a4592
-Author: 97krihop <97krihop@gmail.com>
-Date:   Mon May 18 03:14:13 2020 +0200
-
-    Dev (#5) (#6)
-    
-    * Test 1 (#4)
-    
-    * test 1
-    
-    * remove all
-    
-    * Revert "remove all"
-    
-    This reverts commit 2aa0ce843390c72a535ffdc34e44553f6fe6046f.
-    
-    * Revert "test 1"
-    
-    This reverts commit 163cb6d93ddc7f7caa45d80a63708fee25d8555d.
-    
-    * added teams and merge
-    
-    Co-authored-by: kristoffer <97krihopgmail.com>
-    
-    * added delete on team
-    
-    * added rednerComments
-    
-    * added form for coments
-    
-    * added teams to active feld
-    
-    * added complete task
-    
-    * prettify
-    
-    Co-authored-by: kristoffer <97krihopgmail.com>
-
-commit 689da97d6b8156efb4fff73e8d4e46bc12d60999
-Author: kristoffer <97krihopgmail.com>
-Date:   Mon May 18 02:53:50 2020 +0200
-
-    bugfix
-
-commit e057d978b73a5ffc3095e6ccef9f6bff52db0c5b
-Author: kristoffer <97krihopgmail.com>
-Date:   Mon May 18 02:24:37 2020 +0200
-
-    change name on list to task
-
-commit 452fa11affd361a71feeabf779ea0517ea31c77a
-Author: kristoffer <97krihopgmail.com>
-Date:   Sun May 17 23:03:05 2020 +0200
-
-    prettify
-
-commit d4d86dedc675c3b2c7f7b1c6a979d9187ffb837f
-Author: kristoffer <97krihopgmail.com>
-Date:   Sat May 16 00:08:27 2020 +0200
-
-    added complete task
-
-commit 5447121f5d852157abf32421fa738dd65a26a2af
-Author: kristoffer <97krihopgmail.com>
-Date:   Fri May 15 23:49:45 2020 +0200
-
-    added teams to active feld
-
-commit cdb125601e5a9389c9c12c70a84e297c1cacde87
-Author: kristoffer <97krihopgmail.com>
-Date:   Fri May 15 23:02:07 2020 +0200
-
-    added form for coments
-
-commit 9f3185ea1b194eae3fe28f9afeda8812b62d7e57
-Author: kristoffer <97krihopgmail.com>
-Date:   Fri May 15 22:49:58 2020 +0200
-
-    added rednerComments
-
-commit 78578c9e0ea5f84e1a4b9c2396c252503ae78557
-Author: kristoffer <97krihopgmail.com>
-Date:   Fri May 15 21:21:01 2020 +0200
-
-    added delete on team
-
-commit ca93c84fa457f8fe7b39110fd716ae9fbcf92152
+commit 945fc506e8efdecef01090c6fc0c03ea0f1cb1ab
+Merge: ceecf7e a588666
 Author: 97krihop <24739853+97krihop@users.noreply.github.com>
-Date:   Fri May 15 18:21:46 2020 +0200
+Date:   Fri May 15 13:52:58 2020 +0200
 
-    Test 1 (#4)
+    Merge pull request #3 from Westerdals/Dev
     
-    * test 1
-    
-    * remove all
-    
-    * Revert "remove all"
-    
-    This reverts commit 2aa0ce843390c72a535ffdc34e44553f6fe6046f.
-    
-    * Revert "test 1"
-    
-    This reverts commit 163cb6d93ddc7f7caa45d80a63708fee25d8555d.
-    
-    * added teams and merge
-    
-    Co-authored-by: kristoffer <97krihopgmail.com>
+    Dev
 
 commit a5886667add8ff06dd9574aa82f5cad9b36c545e
 Author: kristoffer <97krihopgmail.com>
@@ -327,11 +459,29 @@ Date:   Fri May 15 06:25:07 2020 +0200
 
     added Darkmode
 
+commit ceecf7e2a638106fd9f6a86af781481a828af4a8
+Merge: 814c76c 569bd81
+Author: 97krihop <24739853+97krihop@users.noreply.github.com>
+Date:   Fri May 15 00:24:59 2020 +0200
+
+    Merge pull request #2 from Westerdals/Dev
+    
+    style
+
 commit 569bd81ab2dd8843e87aaae0e23741461b2fcbe0
 Author: kristoffer <97krihopgmail.com>
 Date:   Fri May 15 00:24:30 2020 +0200
 
     style
+
+commit 814c76cbfe514d294d05bbe0eec02020cb6923ab
+Merge: fe40fa0 77bf269
+Author: 97krihop <24739853+97krihop@users.noreply.github.com>
+Date:   Fri May 15 00:23:36 2020 +0200
+
+    Merge pull request #1 from Westerdals/Dev
+    
+    Dev
 
 commit 77bf26975d3158a05e6e63ad950df2c1f2eb1e4a
 Author: kristoffer <97krihopgmail.com>
