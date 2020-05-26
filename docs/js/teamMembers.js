@@ -39,8 +39,8 @@ function renderTeams() {
 		const teamElement = document.createElement('li');
 		teamElement.dataset.teamId = team.id;
 		teamElement.classList.add('team-name');
-		teamElement.setAttribute("draggable", true);
-		teamElement.setAttribute("ondragstart", "drag(event)");
+		teamElement.setAttribute('draggable', true);
+		teamElement.setAttribute('ondragstart', 'drag(Event)');
 		teamElement.innerText = team.name;
 		if (team.id === selectedTeamId) {
 			teamElement.classList.add('active-task');
@@ -49,11 +49,6 @@ function renderTeams() {
 	});
 }
 
-function drag(event) {
-	
-	event.dataTransfer.setData("text", JSON.parse(localStorage.getItem("task.selectedTeamId")));
-	//console.log(JSON.parse(localStorage.getItem("task.teams")));
-	console.log(event.target.data-team-id);
-	//console.log(JSON.parse(localStorage.getItem("task.selectedTeamId")));
-	//event.preventDefault()
-  }
+function drag() {
+	selectedTeamId = event.target.dataset.teamId;
+}
