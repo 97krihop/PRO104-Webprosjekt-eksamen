@@ -163,6 +163,22 @@ ul {
 .emoji-btn {
 	left: 0px;
 }
+
+#dateInput {
+	background-color: transparent;
+	color: var(--foreground);
+	border: 0;
+	align-items: center;
+	font-size: large;
+	padding: 0;
+	box-shadow: none;
+	transition: color 500ms ease-in-out;
+}
+
+#dateInput:focus-within {
+	color: var(--clr-active);
+}
+
 @media (max-width: 799px) {
 	body {
 		padding-left: 10px;
